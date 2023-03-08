@@ -1,4 +1,4 @@
-let pacientes = document.querySelector('.paciente')
+//let pacientes = document.querySelector('.paciente')
 
 let tabela = document.querySelector('#tabela-pacientes')
 

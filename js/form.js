@@ -9,8 +9,50 @@ botaoAdicionar.addEventListener('click', function (evento) {
 
     let paciente = obterValoresDoForm(form)
 
+    let erros = validaPaciente(paciente)
+
+    if(erros.length > 0){
+        exibeMensagensDeErro(erros)
+        return 
+    }
+
     adicionaPacienteNaTabela(paciente)
 })
+
+function validaPaciente(paciente){
+    let erros = []
+
+    if(paciente.nome.length == 0){
+        erros.push('O nome não pode estar em branco')
+    }
+    if(paciente.gordura.length == 0){
+        erros.push('A gordura não pode estar em branco')
+    }
+    if(paciente.peso.length == 0){
+        erros.push('O peso não pode estar em branco')
+    }
+    if(paciente.altura.length == 0){
+        erros.push('A altura não pode estar em branco')
+    }
+    if(!validaPeso(paciente.peso)){
+        erros.push('Peso Invalido')
+    }
+    if(!validaAltura(paciente.altura)){
+        erros.push('Altura invalida')
+    }
+
+    return erros
+}
+
+function exibeMensagensDeErro(erros){
+    let ul = document.querySelector('#mensagens-erro')
+    ul.innerHTML = ''
+    erro.forEach(function(erro) {
+        let li = documento.createElement('li')
+        li.textContent = erro
+        ul.apprendChild(li)
+    })
+}
 
 function adicionaPacienteNaTabela(paciente) {
     let pacienteTr = montarTr(paciente)

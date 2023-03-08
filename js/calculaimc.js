@@ -1,9 +1,9 @@
-//usar let
-//document -> significa que estamos trabalhando com html
-//query.Selector é para selecionar no html
 let titulo = document.querySelector('.titulo')
 titulo.textContent = 'Aparecida Nutricionista'
 
+// usar-let
+// document -> significa que estamos trabalhando com html
+// query.Selector é para selecionar no html
 //---------------------------------------------------------------------------------------------------
 
 let pacientes = document.querySelectorAll('.paciente')
@@ -24,8 +24,29 @@ for(let i = 0; i < pacientes.length; i++){
     let imcTd = paciente.querySelector('.info-imc')
     let imc = calculaImc(peso,altura)
     imcTd.textContent = imc
+
+    let pesoEhValido = validaPeso(peso)
+    let alturaEhValido = validaAltura(altura)
+
+    if(pesoEhValido == false){
+        console.log('Peso Invalido')
+        pesoEhValido = false
+        imcTd.textContent = 'Peso Invalido'
+        paciente.classList.add('paciente-invalido')
+    }
+
+    if(!alturaEhValido){
+        console.log('Altura invalida')
+        alturaEhValido = false
+        imcTd.textContent = 'Altura Invalido'
+        paciente.classList.add = 'paciente-invalido'
+    }
+
+    if(pesoEhValido && alturaEhValido){
+        let imc = calculaImc(peso, altura)
+        imcTd.textContent = imc
+    }
     
-    //toFixed para diminuir as classes decimais
 }
 
 function calculaImc(peso, altura){
@@ -33,4 +54,21 @@ function calculaImc(peso, altura){
     //calculando o imc do paciente
     imc = peso / (altura * altura)
     return imc.toFixed(2)
+    //toFixed para diminuir as classes decimais
+}
+
+function validaPeso(peso){
+    if(peso >= 0 && peso <= 1000){
+        return true 
+    }else{
+        return false
+    }
+}
+
+function validaAltura(altura){
+    if(altura >= 0 && altura <=3){
+        return true
+    }else{
+        return false
+    }
 }
