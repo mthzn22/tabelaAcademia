@@ -1,9 +1,44 @@
-<mxfile host="app.diagrams.net" modified="2023-04-05T12:24:50.063Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" version="21.1.4" etag="mXWAGtbMu5dflhS1Rfox" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-13T15:56:22.035Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="UCZ41nng_-vJUZsXM_Or" version="21.3.3" type="github">
   <diagram name="Página-1" id="THb22jrygqU2779-wDtz">
-    <mxGraphModel>
+    <mxGraphModel dx="1114" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yN40EIPhGtzf1hgGHtXB-1" target="yN40EIPhGtzf1hgGHtXB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-2" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="yN40EIPhGtzf1hgGHtXB-2" source="yN40EIPhGtzf1hgGHtXB-3" target="yN40EIPhGtzf1hgGHtXB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-3" value="visualizar tarefas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yN40EIPhGtzf1hgGHtXB-2">
+          <mxGeometry x="21" y="30" width="99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="yN40EIPhGtzf1hgGHtXB-2" source="yN40EIPhGtzf1hgGHtXB-5" target="yN40EIPhGtzf1hgGHtXB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-5" value="add tarefas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yN40EIPhGtzf1hgGHtXB-2">
+          <mxGeometry x="21" y="90" width="99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-7" value="excluir tarefas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="yN40EIPhGtzf1hgGHtXB-2">
+          <mxGeometry x="21" y="150" width="99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yN40EIPhGtzf1hgGHtXB-5" target="yN40EIPhGtzf1hgGHtXB-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yN40EIPhGtzf1hgGHtXB-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yN40EIPhGtzf1hgGHtXB-7" target="yN40EIPhGtzf1hgGHtXB-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="181" y="370" />
+              <mxPoint x="181" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
